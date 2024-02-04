@@ -5,9 +5,16 @@ name = "pypi"
 
 [packages]
 django = "*"
-django-environ = "*"
+python-dotenv = "*"
 
 [dev-packages]
+pre-commit = "*"
+black = "*"
+pylint-django = "*"
+isort = "*"
+djlint = "*"
+pytest = "*"
+mypy = "*"
 
 [requires]
 python_version = "3.11"
