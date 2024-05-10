@@ -1,0 +1,26 @@
+# ==== black ====
+[tool.black]
+line-length = 119
+
+# ==== isort ====
+[tool.isort]
+profile = "black"
+line_length = 119
+skip_glob = ["**/migrations/*.py"]
+
+[tool.djlint]
+profile="django"
+blank_line_after_tag="load,extends,include"
+blank_line_before_tag="load,extends,include"
+exclude= "**/migrations/*.py"
+format_css=true
+format_js=true
+ignore="H014,H015"
+max_line_length=119
+use_gitignore=true
+
+[tool.djlint.css]
+indent_size=4
+
+[tool.djlint.js]
+indent_size=4

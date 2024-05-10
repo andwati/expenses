@@ -1,0 +1,23 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+django = "*"
+python-dotenv = "*"
+whitenoise = {extras = ["brotli"], version = "*"}
+psycopg = {extras = ["binary"], version = "*"}
+django-bootstrap-v5 = "*"
+validate-email = "*"
+django-crispy-forms = "*"
+crispy-bootstrap5 = "*"
+
+[dev-packages]
+black = "*"
+isort = "*"
+pre-commit = "*"
+djlint = "*"
+
+[requires]
+python_version = "3.12"
